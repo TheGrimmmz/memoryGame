@@ -3,14 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <title>MUSCLE MEMORY!</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cars.css" />
   </head>
   <body>
     <div class="memory">
     <h1 id="words">MUSCLE MEMORY!</h1>
     </div>
+    <div>
+      <h2>SCORE: <span class="scoreCount">" "</span> HIGH SCORE:<span class="highScore"></span></h2>
+    </div>
+    <br>
     <!-- <button class="start">Start</button> -->
     <input type="reset" class="reset" value="RESET">
+    <!-- <input type="button" class="win" value="WIN"> -->
+    <div class="hidden" id="victory">
+      SMOKIN'
+      <br>
+      <img id="burnout" src="burnout.gif"  alt="burnout">
+    </div>
     <div class="wrapper">
       <ul class="cards">
         <li class="card">
@@ -141,11 +151,11 @@
         </li>
       </ul>
     </div>
-    <dialog id="win">
-      "Smokin'"
+    <!-- <dialog open class="winGif" id="win">
+      SMOKIN'
       <br>
-      <img id="youwin" src="burnout.gif"  alt="burnout">
-    </dialog>
+      <img id="burnout" src="burnout.gif"  alt="burnout">
+    </dialog> -->
     <script src="cars.js"></script>
   </body>
 </html>
